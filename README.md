@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📸 Crop-Resize-Studio
 
-## Getting Started
+A powerful web-based image and video manipulation tool that allows users to easily crop, resize, and perform various operations on their media files directly from the browser. Built with **Next.js**, this tool offers fast, intuitive image manipulation with a beautiful user interface.
 
-First, run the development server:
+![Crop-Resize-Studio Banner](./public/banner.png)
+
+## 🚀 Features
+
+- **Image Cropping**: Crop images into any shape or size.
+- **Image Resizing**: Easily resize images with predefined dimensions or custom sizes.
+- **Circular Image Cropping**: Create beautiful circular images with just a few clicks.
+- **Composite Image Creation**: Combine multiple images into a seamless composite.
+- **Drag & Drop Support**: Drag and drop files to begin editing immediately.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Lightweight & Fast**: No backend dependency required for image manipulation.
+- **Supports Multiple Formats**: PNG, JPEG, and more.
+  
+## 🎯 Tech Stack
+
+- **Frontend**: React, Next.js, CSS-in-JS (Styled Components)
+- **Image Manipulation**: [PIL (Python Imaging Library)](https://pillow.readthedocs.io/) on the backend
+- **Deployment**: Vercel / Netlify
+
+## 🔧 Installation and Setup
+
+To get started locally, follow these simple steps:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/Fanu2/Crop-Resize-Studio.git
+    cd Crop-Resize-Studio
+    ```
+
+2. **Install the dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## 🌟 Usage
+
+Once the server is running, you can:
+
+- Upload images using the drag & drop area or file selector.
+- Crop images by selecting a region and apply circular crops.
+- Resize images using either predefined dimensions or custom sizes.
+- Generate a composite of multiple images and download the output.
+
+### Example of Cropping and Resizing
+
+![Cropping Example](./public/cropping-example.gif)
+
+## 📂 Folder Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+.
+├── components
+│   ├── ImageCropper.js     # Component for image cropping functionality
+│   └── ImageResizer.js     # Component for image resizing functionality
+├── pages
+│   ├── api
+│   │   └── upload.js       # API for handling image upload
+│   └── index.js            # Main page for the app
+├── public
+│   └── banner.png          # Project banner image
+├── styles
+│   └── globals.css         # Global styles for the app
+└── README.md               # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💻 API Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### `/api/upload`
+- **Method**: `POST`
+- **Description**: Endpoint for handling image upload. Returns a cropped or resized image in response.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### `/api/resize`
+- **Method**: `POST`
+- **Description**: Endpoint for resizing images. Accepts custom dimensions.
 
-## Learn More
+## 🛠️ Built Using
 
-To learn more about Next.js, take a look at the following resources:
+- [React](https://reactjs.org/) - Frontend JavaScript library
+- [Next.js](https://nextjs.org/) - The React Framework for Production
+- [PIL (Python Imaging Library)](https://pillow.readthedocs.io/) - Backend image processing
+- [Styled Components](https://styled-components.com/) - CSS-in-JS for styling
+- [Vercel](https://vercel.com/) - Cloud platform for static sites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions, issues, and feature requests are welcome! Feel free to check out the [issues page](https://github.com/Fanu2/Crop-Resize-Studio/issues).
 
-## Deploy on Vercel
+To contribute:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+### 🌐 Live Demo
+
+You can try out the live version of **Crop-Resize-Studio** [here](#).
+
+---
+
+Happy Coding! 🎨
