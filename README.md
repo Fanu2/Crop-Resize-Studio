@@ -115,7 +115,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### 🌐 Live Demo
 
-You can try out the live version of **Crop-Resize-Studio** [here](#).
+You can try out the live version of **Crop-Resize-Studio** [here](https://crop-resize-studio.vercel.app/).
 
 ---
 
